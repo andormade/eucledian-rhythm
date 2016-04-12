@@ -1,6 +1,6 @@
 {
   "name": "eucledian-rhythm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implements Bjorklund’s algorithm in JavaScript to generate Eucledian rhythms",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/hngrhorace/eucledian-rhythm.git"
   },
   "keywords": [
-    "bjorklund"
+    "bjorklund", "eucledian", "rythm"
   ],
   "author": "Andor Polgar",
   "license": "MIT",

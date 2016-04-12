@@ -14,15 +14,15 @@ function uniqueElements(arr) {
 	return arr.filter(function(v, i) { return i == arr.lastIndexOf(v); });
 }
 
-function split(arr) {
+function split(beat) {
 	var leftSide = [];
 	var rightSide = [];
 
-	for (var i = 0; i < arr.length; i++) {
-		if (arr[0] === arr[i]) {
-			leftSide.push(arr[i]);
+	for (var i = 0; i < beat.length; i++) {
+		if (beat[0] === beat[i]) {
+			leftSide.push(beat[i]);
 		} else {
-			rightSide.push(arr[i]);
+			rightSide.push(beat[i]);
 		}
 	}
 
@@ -32,7 +32,7 @@ function split(arr) {
 	}
 }
 
-module.exports = function(length, beats) {
+function rhythm(length, beats) {
 	var beat = Array(length);
 	beat.fill('-', 0, length);
 	beat.fill('.', 0, beats);
@@ -45,4 +45,6 @@ module.exports = function(length, beats) {
 	}
 
 	return beat.join('');
-};
+}
+
+module.exports = rhythm;
