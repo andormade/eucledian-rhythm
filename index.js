@@ -38,7 +38,6 @@ module.exports = function(length, beats) {
 	beat.fill('.', 0, beats);
 
 	while(uniqueElements(beat).length === 2) {
-		console.log(beat);
 		beat = move(
 			split(beat).leftSide,
 			split(beat).rightSide
